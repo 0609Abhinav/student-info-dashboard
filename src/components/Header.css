@@ -1,0 +1,156 @@
+/* --- Header Container --- */
+.header {
+  background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* --- Left Section --- */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-logo {
+  font-size: 2rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* --- Middle: Search --- */
+.header-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.header-search input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.header-search input:focus {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header-search button {
+  background: #0048c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.header-search button:hover {
+  background: #003bb0;
+  transform: scale(1.05);
+}
+
+/* --- Right Section --- */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s, opacity 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.profile:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-1px);
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header-search {
+    order: 3;
+    width: 100%;
+    max-width: none;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .header-nav {
+    gap: 0.8rem;
+  }
+}

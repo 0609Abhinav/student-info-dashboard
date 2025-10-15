@@ -1,0 +1,82 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.close-icon {
+  cursor: pointer;
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.close-icon:hover {
+  color: #000;
+}
+
+.modal-body {
+  margin-top: 1rem;
+}
+
+.actions .action-icon {
+  margin-right: 0.8rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.actions .action-icon:hover {
+  transform: scale(1.2);
+}
+
+.actions .view { color: #3498db; }
+.actions .edit { color: #f1c40f; }
+.actions .delete { color: #e74c3c; }
+
+.btn-delete {
+  background: #e74c3c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #bdc3c7;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,97 @@
+/* ===== Dashboard Layout ===== */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+.dashboard-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.dashboard-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  background: #f4f6fa;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.student-panel {
+  flex: 1 1 60%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.student-details-panel {
+  flex: 1 1 35%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* ===== Tabs ===== */
+.student-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tab-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-header button {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.tab-header button:hover {
+  color: #111;
+}
+
+.tab-header button.active {
+  border-color: #007bff;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+  .student-panel,
+  .student-details-panel {
+    flex: 1 1 100%;
+  }
+}

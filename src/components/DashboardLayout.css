@@ -1,0 +1,25 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* Optional placeholder styling for forms */
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 1.5rem;
+  color: #555;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
